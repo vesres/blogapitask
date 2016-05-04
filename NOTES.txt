@@ -1,0 +1,25 @@
+WHAT MORE CAN BE DONE
+--------------------
+-- More Java8 e.g. Optional etc.
+-- Uploaded files should be stored in dedicated place in server.
+   For simplicity, it was placed for the task in the resources folder.
+-- Utility class for e.g. deletePost.
+-- More methods for rest service, findPostById etc.
+-- Production level authentication, db or OATH etc.
+-- If delete post fails, do not delete image in filesystem. Specific exception for db delete and other for file delete.
+-- Exception handling of rest controller using @ExceptionHandler and specific exceptions for other cases e.g.
+   trying to create a user with no data.
+-- Filename property of post entity can be validated the same way as username of user entity.
+-- Caching
+-- More detailed Javadoc
+
+NON-PRODUCTION DECISIONS
+------------------------
+- I tried to keep the task as simple as possible and I
+did many of my choices based on that e.g. basic auth.
+- spring.jpa.generate-ddl
+- basic auth
+- db password on properties file
+- I assumed 1-1 user to blog relationship.
+
+
