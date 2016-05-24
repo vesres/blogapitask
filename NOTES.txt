@@ -11,6 +11,16 @@ WHAT MORE CAN BE DONE
    trying to create a user with no data.
 -- Filename property of post entity can be validated the same way as username of user entity.
 -- Caching
+   Caching the REST API
+   --------------------
+   Use reverse proxy for safe methods(GET).When an API receives a call with an unsafe resource, it should fire
+   a PURGE request on that resource so that the cached resource is expired.Of course the reverse proxy should be
+   configured to still remove a resource when it receives a PURGE. So for unsafe methods e.g. a PUT is send to the
+   API but then the API sends a PURGE to the cache.
+
+   Caching with Hibernate
+   ----------------------------
+   EHCache, Memcached etc.
 -- More detailed Javadoc
 
 NON-PRODUCTION DECISIONS
