@@ -1,9 +1,10 @@
 WHAT MORE CAN BE DONE
---------------------
+---------------------
 -- More Java8 e.g. Optional etc.
 -- Uploaded files should be stored in dedicated place in server.
    For simplicity, it was placed for the task in the resources folder.
 -- Utility class for e.g. deletePost.
+-- User username should be unique.
 -- More methods for rest service, findPostById etc.
 -- Production level authentication, db or OAuth, OAuth2 etc.
    All versions must be protected through SSL/TLS. JWT (Json Web Tokens) is also a solution.
@@ -12,6 +13,9 @@ WHAT MORE CAN BE DONE
 -- Exception handling of rest controller using @ExceptionHandler and specific exceptions for other cases e.g.
    trying to create a user with no data.
 -- Filename property of post entity can be validated the same way as username of user entity.
+-- Pagination and filtering in Rest API. e.g /comments?offset=30&limit10
+-- HATEOAS
+-- Send error message in JSON format.
 -- Caching
    Caching the REST API
    --------------------
